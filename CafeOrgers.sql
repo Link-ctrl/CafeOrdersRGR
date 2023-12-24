@@ -40,19 +40,19 @@ CREATE TABLE Employees (
 -- Добавление клиентов
 INSERT INTO Customers (FirstName, LastName, Email, Phone) VALUES
 ('Иван', 'Иванов', 'ivan@example.com', '123-456-7890'),
-('Мария', 'Петрова', 'maria@example.com', '987-654-3210'),
+('Мария', 'Петрова', 'maria@example.com', '987-654-3210');
 -- Добавление блюд
 INSERT INTO Dishes (DishName, Price) VALUES
 ('Пицца Маргарита', 12.99),
-('Стейк из говядины', 24.99),
+('Стейк из говядины', 24.99);
 -- Добавление заказов
 INSERT INTO Orders (CustomerID) VALUES
 (1),
-(2),
+(2);
 -- Добавление состава заказа
 INSERT INTO OrderItems (OrderID, DishID, Quantity) VALUES
 (1, 1, 2),
-(2, 2, 1),
+(2, 2, 1);
 -- Добавление сотрудников
 INSERT INTO Employees (FirstName, LastName, Position) VALUES
 ('Алексей', 'Сидоров', 'Официант'),
