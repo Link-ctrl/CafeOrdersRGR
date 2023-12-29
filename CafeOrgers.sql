@@ -29,6 +29,16 @@ CREATE TABLE Employees (
     Position VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE Order_Details (
+  order_id INT,
+  product_id INT,
+  quantity INT,
+  subtotal DECIMAL(10, 2),
+  FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+  FOREIGN KEY (product_id) REFERENCES Products(product_id),
+  PRIMARY KEY (order_id, product_id)
+);
+
 -- Добавление клиентов
 INSERT INTO Customers (FirstName, LastName, Email, Phone) VALUES
 ('Иван', 'Иванов', 'ivan@example.com', '123-456-7890'),
