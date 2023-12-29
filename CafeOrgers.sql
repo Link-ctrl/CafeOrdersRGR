@@ -85,8 +85,8 @@ DELIMITER ;
 
 -- Триггер для проверки, что количество заказанных блюд не превышает вместимость стола
 DELIMITER //
-CREATE TRIGGER Before_Insert_OrderItems
-BEFORE INSERT ON OrderItems
+CREATE TRIGGER Before_Insert_Dishes
+BEFORE INSERT ON Dishes
 FOR EACH ROW
 BEGIN
     DECLARE TotalCapacity INT;
